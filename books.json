@@ -1,0 +1,83 @@
+[
+    {
+      "titel": "Blommor i regnet",
+      "författare": "Lisa Johansson",
+      "pris": 199,
+      "beskrivning": "En poetisk roman om livets skörhet och de ögonblick av skönhet som ibland uppstår mitt i mörka perioder.",
+      "utgivningsdatum": "2024-03-15",
+      "omslagsbild": "En vacker blomma som växer genom ett regnigt fönster."
+    },
+    {
+      "titel": "Mörka hemligheter",
+      "författare": "Erik Lindström",
+      "pris": 159,
+      "beskrivning": "En thrillerroman som följer en detektiv på jakt efter svar på mysterier som sträcker sig långt tillbaka i tiden.",
+      "utgivningsdatum": "2023-11-05",
+      "omslagsbild": "En dimmig stad med en skepnad som går genom en smal gränd."
+    },
+    {
+      "titel": "Resan till det okända",
+      "författare": "Sofia Bergström",
+      "pris": 229,
+      "beskrivning": "En science fiction-roman om en expedition till en annan galax där upptäckten av ett nytt livsform förändrar allt.",
+      "utgivningsdatum": "2025-01-20",
+      "omslagsbild": "Ett rymdskepp på väg genom ett stjärnspäckat universum."
+    },
+    {
+      "titel": "Hjärtats väg",
+      "författare": "Amanda Forsberg",
+      "pris": 179,
+      "beskrivning": "En känsloladdad berättelse om att hitta sig själv genom kärlek och förlust.",
+      "utgivningsdatum": "2024-05-01",
+      "omslagsbild": "En solnedgång vid havet, där två silhuetter går längs stranden."
+    },
+    {
+      "titel": "Livets stora frågor",
+      "författare": "Johan Sundberg",
+      "pris": 249,
+      "beskrivning": "En filosofisk bok som utforskar de djupaste frågorna om meningen med livet och människans plats i universum.",
+      "utgivningsdatum": "2023-10-10",
+      "omslagsbild": "En öppen bok med en stjärnhimmel som reflekteras i sidorna."
+    },
+    {
+      "titel": "Vägen till frihet",
+      "författare": "Maria Lind",
+      "pris": 199,
+      "beskrivning": "En biografi om en kvinnas kamp för frihet och rättvisa i en förtryckande värld.",
+      "utgivningsdatum": "2025-02-01",
+      "omslagsbild": "En kvinnas silhuett som står på en klippa och blickar ut mot horisonten."
+    },
+    {
+      "titel": "Bortom horisonten",
+      "författare": "Fredrik Nilsson",
+      "pris": 179,
+      "beskrivning": "En episk berättelse om äventyr och vänskap, där huvudpersonen söker sitt förlorade förflutna.",
+      "utgivningsdatum": "2024-08-19",
+      "omslagsbild": "Ett fjärran berg med en stig som leder bortom horisonten, där solnedgången färgar himlen."
+    },
+    {
+      "titel": "Skuggorna av vårt förflutna",
+      "författare": "Helena Andersson",
+      "pris": 229,
+      "beskrivning": "En historisk roman om en familj som bär på mörka hemligheter från en svunnen tid.",
+      "utgivningsdatum": "2023-09-22",
+      "omslagsbild": "En gammal herrgård med mörka skuggor och en stormig himmel ovanför."
+    },
+    {
+      "titel": "Det osynliga bandet",
+      "författare": "Marcus Eriksson",
+      "pris": 169,
+      "beskrivning": "En fängslande roman om relationer, vänskap och det osynliga band som binder oss samman genom livet.",
+      "utgivningsdatum": "2024-07-12",
+      "omslagsbild": "Två händer som är på väg att nå varandra i ett dämpat ljus."
+    },
+    {
+      "titel": "Koden till evigheten",
+      "författare": "Henrik Persson",
+      "pris": 299,
+      "beskrivning": "En thriller om en hemlig organisation som söker efter en forntida kod som kan ge odödlighet.",
+      "utgivningsdatum": "2025-03-30",
+      "omslagsbild": "En gammal bok med en kodsnacka och mysterier i bakgrunden."
+    }
+  ]
+  
