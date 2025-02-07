@@ -1,5 +1,6 @@
 
 // const books = require('./books.js');
+
 const books = [
     {
       "titel": "Blommor i regnet",
@@ -90,9 +91,14 @@ const printBookCard = (books) => {
         const div = document.createElement("div");
         const img = document.createElement("img");
         const title = document.createElement("a");
+        const author = document.createElement("h3");
+        const buy = document.createElement("button");
+        buy.innerText = book.pris;
+        author.innerText = book.författare;
+
         title.innerText=book.titel;
         img.src = book.bildUrl;
-        div.append(img, title)
+        div.append(img, title, author, buy)
         cards.append(div)
 
     })
