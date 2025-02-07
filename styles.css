@@ -3,6 +3,28 @@ body{
     min-height: 100vh;
 }
 
+#cards{
+    
+    .cardsContainer{
+        display: flex;
+    gap: 15px;
+    .card{
+
+    }
+    }
+    button{
+        width: 100%;
+        background-color: #ED1C24;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        height: 48px;
+        font-size: large;
+        font-weight: bold;
+    }
+}
+
+
 header{
     #headerMain{
         display: flex;
