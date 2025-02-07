@@ -83,8 +83,13 @@ const book = [
 
 let searchFunction = () => {
     let inputValue = document.querySelector("#bookSearch").value;
+    let lowerCase = inputValue.toLowerCase();
     let cards = document.querySelectorAll("#cards div");
-    console.log(inputValue);
+
+    let matchedBooks = book.filter( book => book.titel.toLocaleLowerCase().includes(lowerCase));
+    
+    document.querySelector("div.cardsContainer").innerHTML="";
+    
     
 
 }
