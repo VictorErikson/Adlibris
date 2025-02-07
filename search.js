@@ -1,12 +1,13 @@
-[
+import{ printBookCard } from './card.js';
+
+const book = [
     {
       "titel": "Blommor i regnet",
       "författare": "Lisa Johansson",
       "pris": 199,
       "beskrivning": "En poetisk roman om livets skörhet och de ögonblick av skönhet som ibland uppstår mitt i mörka perioder.",
       "utgivningsdatum": "2024-03-15",
-      "omslagsbild": "En vacker blomma som växer genom ett regnigt fönster.",
-      "bildUrl":"https://s2.adlibris.com/images/71112517/flykten-om-prinsessan-martha-av-sverige-kronprins-olav-av-norge.jpg"
+      "bildUrl": "https://s2.adlibris.com/images/71112517/flykten-om-prinsessan-martha-av-sverige-kronprins-olav-av-norge.jpg"
     },
     {
       "titel": "Mörka hemligheter",
@@ -14,7 +15,6 @@
       "pris": 159,
       "beskrivning": "En thrillerroman som följer en detektiv på jakt efter svar på mysterier som sträcker sig långt tillbaka i tiden.",
       "utgivningsdatum": "2023-11-05",
-      "omslagsbild": "En dimmig stad med en skepnad som går genom en smal gränd.",
       "bildUrl": "https://s2.adlibris.com/images/52824304/walking.jpg"
     },
     {
@@ -23,7 +23,6 @@
       "pris": 229,
       "beskrivning": "En science fiction-roman om en expedition till en annan galax där upptäckten av ett nytt livsform förändrar allt.",
       "utgivningsdatum": "2025-01-20",
-      "omslagsbild": "Ett rymdskepp på väg genom ett stjärnspäckat universum.",
       "bildUrl": "https://s2.adlibris.com/images/70585356/velgjoreren.jpg"
     },
     {
@@ -32,7 +31,6 @@
       "pris": 179,
       "beskrivning": "En känsloladdad berättelse om att hitta sig själv genom kärlek och förlust.",
       "utgivningsdatum": "2024-05-01",
-      "omslagsbild": "En solnedgång vid havet, där två silhuetter går längs stranden.",
       "bildUrl": "https://s2.adlibris.com/images/65715286/den-fremmede.jpg"
     },
     {
@@ -41,7 +39,6 @@
       "pris": 249,
       "beskrivning": "En filosofisk bok som utforskar de djupaste frågorna om meningen med livet och människans plats i universum.",
       "utgivningsdatum": "2023-10-10",
-      "omslagsbild": "En öppen bok med en stjärnhimmel som reflekteras i sidorna.",
       "bildUrl": "https://s2.adlibris.com/images/69870324/utspring.jpg"
     },
     {
@@ -50,7 +47,6 @@
       "pris": 199,
       "beskrivning": "En biografi om en kvinnas kamp för frihet och rättvisa i en förtryckande värld.",
       "utgivningsdatum": "2025-02-01",
-      "omslagsbild": "En kvinnas silhuett som står på en klippa och blickar ut mot horisonten.",
       "bildUrl": "https://s1.adlibris.com/images/72345799/nomaden.jpg"
     },
     {
@@ -59,8 +55,7 @@
       "pris": 179,
       "beskrivning": "En episk berättelse om äventyr och vänskap, där huvudpersonen söker sitt förlorade förflutna.",
       "utgivningsdatum": "2024-08-19",
-      "omslagsbild": "Ett fjärran berg med en stig som leder bortom horisonten, där solnedgången färgar himlen.",
-      "bildUrl":"https://s2.adlibris.com/images/67522602/til-minne-om-en-morder.jpg"
+      "bildUrl": "https://s2.adlibris.com/images/67522602/til-minne-om-en-morder.jpg"
     },
     {
       "titel": "Skuggorna av vårt förflutna",
@@ -68,8 +63,7 @@
       "pris": 229,
       "beskrivning": "En historisk roman om en familj som bär på mörka hemligheter från en svunnen tid.",
       "utgivningsdatum": "2023-09-22",
-      "omslagsbild": "En gammal herrgård med mörka skuggor och en stormig himmel ovanför.",
-      "bildUrl":"https://s2.adlibris.com/images/68978166/skammens-vag.jpg"
+      "bildUrl": "https://s2.adlibris.com/images/68978166/skammens-vag.jpg"
     },
     {
       "titel": "Det osynliga bandet",
@@ -77,8 +71,7 @@
       "pris": 169,
       "beskrivning": "En fängslande roman om relationer, vänskap och det osynliga band som binder oss samman genom livet.",
       "utgivningsdatum": "2024-07-12",
-      "omslagsbild": "Två händer som är på väg att nå varandra i ett dämpat ljus.",
-      "bildUrl":"https://s2.adlibris.com/images/66799509/til-minde-om-en-morder.jpg"
+      "bildUrl": "https://s2.adlibris.com/images/66799509/til-minde-om-en-morder.jpg"
     },
     {
       "titel": "Koden till evigheten",
@@ -86,8 +79,19 @@
       "pris": 299,
       "beskrivning": "En thriller om en hemlig organisation som söker efter en forntida kod som kan ge odödlighet.",
       "utgivningsdatum": "2025-03-30",
-      "omslagsbild": "En gammal bok med en kodsnacka och mysterier i bakgrunden.",
-      "bildUrl":"https://s1.adlibris.com/images/71704404/tranorna-flyger-soderut.jpg"
-    }
-  ]
-  
+      "bildUrl": "https://s1.adlibris.com/images/71704404/tranorna-flyger-soderut.jpg"
+      }]
+      
+printBookCard(book);
+let searchFunction = () => {
+    let inputValue = document.querySelector("#bookSearch").value;
+    let lowerCase = inputValue.toLowerCase();
+    let cards = document.querySelectorAll("#cards div");
+
+    let matchedBooks = book.filter( book => book.titel.toLocaleLowerCase().includes(lowerCase));
+    
+    document.querySelector("div.cardsContainer").innerHTML="";
+    printBookCard(matchedBooks);
+}
+
+document.querySelector("#searchButton").addEventListener("click", searchFunction);
