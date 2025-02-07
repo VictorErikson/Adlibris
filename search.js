@@ -1,4 +1,4 @@
-const books = [
+const book = [
     {
       "titel": "Blommor i regnet",
       "författare": "Lisa Johansson",
@@ -82,7 +82,15 @@ const books = [
   ];
 
 let searchFunction = () => {
+    let inputValue = document.querySelector("#bookSearch").value;
+    let lowerCase = inputValue.toLowerCase();
     let cards = document.querySelectorAll("#cards div");
+
+    let matchedBooks = book.filter( book => book.titel.toLocaleLowerCase().includes(lowerCase));
+    
+    document.querySelector("div.cardsContainer").innerHTML="";
+    
+    
 
 }
 
