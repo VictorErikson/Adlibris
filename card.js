@@ -87,19 +87,24 @@ const books = [
 const cards = document.querySelector("#cards");
 
 const printBookCard = (books) => {
+    const cardsContainer = document.createElement("div");
+    cardsContainer.classList.add("cardsContainer");
+
+    cards.append(cardsContainer)
     books.forEach(book => {
-        const div = document.createElement("div");
+        const bookContainer = document.createElement("div");
+        bookContainer.classList.add("card");
         const img = document.createElement("img");
         const title = document.createElement("a");
         const author = document.createElement("h3");
         const buy = document.createElement("button");
-        buy.innerText = book.pris;
+        buy.innerText = book.pris + " kr";
         author.innerText = book.författare;
 
         title.innerText=book.titel;
         img.src = book.bildUrl;
-        div.append(img, title, author, buy)
-        cards.append(div)
+        bookContainer.append(img, title, author, buy)
+        cardsContainer.append(bookContainer)
 
     })
 }  
