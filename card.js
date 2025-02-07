@@ -105,7 +105,7 @@
 
 const cards = document.querySelector("#cards");
 
-const printBookCard = (books) => {
+export const printBookCard = (books) => {
     const cardsContainer = document.querySelector(".cardsContainer")
     cardsContainer.innerHTML="";
     

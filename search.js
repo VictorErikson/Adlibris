@@ -1,3 +1,5 @@
+import{ printBookCard } from './card.js';
+
 const book = [
     {
       "titel": "Blommor i regnet",
@@ -81,6 +83,8 @@ const book = [
     }
   ];
 
+printBookCard(book);
+
 let searchFunction = () => {
     let inputValue = document.querySelector("#bookSearch").value;
     let lowerCase = inputValue.toLowerCase();
@@ -89,9 +93,7 @@ let searchFunction = () => {
     let matchedBooks = book.filter( book => book.titel.toLocaleLowerCase().includes(lowerCase));
     
     document.querySelector("div.cardsContainer").innerHTML="";
-    
-    
-
+    printBookCard(matchedBooks);
 }
 
 document.querySelector("#searchButton").addEventListener("click", searchFunction);
