@@ -80,6 +80,10 @@ const books = [
       "bildUrl": "https://s1.adlibris.com/images/71704404/tranorna-flyger-soderut.jpg"
     }
   ];
-  
 
-document.querySelector("#searchButton").addEventListener("click", )
+let searchFunction = () => {
+    let cards = document.querySelectorAll("#cards div");
+
+}
+
+document.querySelector("#searchButton").addEventListener("click", searchFunction);
