@@ -1,4 +1,4 @@
-const books = [
+const book = [
     {
       "titel": "Blommor i regnet",
       "författare": "Lisa Johansson",
@@ -82,7 +82,10 @@ const books = [
   ];
 
 let searchFunction = () => {
+    let inputValue = document.querySelector("#bookSearch").value;
     let cards = document.querySelectorAll("#cards div");
+    console.log(inputValue);
+    
 
 }
 
